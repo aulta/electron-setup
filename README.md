@@ -92,6 +92,8 @@ For Windows 10.
 
 **package.json** をエディタで開き、次のようにします。
 
+main を main.js に変更します。
+
 scripts / build を変更し、build はそのままコピペです。
 
 他の部分は元のままでOKです。
@@ -101,7 +103,7 @@ scripts / build を変更し、build はそのままコピペです。
   "name": "sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build": "electron-builder"
   },
