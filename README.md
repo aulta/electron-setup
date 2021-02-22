@@ -23,6 +23,8 @@ For Windows 10.
 
 個人的には[こちら](https://aulta.co.jp/archives/8343)を使い、「新規PHPプロジェクト」として作成しています。
 
+※設置するパスには日本語を含まないようにしてください。
+
 ### ファイルの配置
 
 このリポジトリを「Download ZIP」して、解凍して配置します。
@@ -92,6 +94,8 @@ For Windows 10.
 
 **package.json** をエディタで開き、次のようにします。
 
+main を main.js に変更します。
+
 scripts / build を変更し、build はそのままコピペです。
 
 他の部分は元のままでOKです。
@@ -101,7 +105,7 @@ scripts / build を変更し、build はそのままコピペです。
   "name": "sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build": "electron-builder"
   },
@@ -161,6 +165,14 @@ scripts / build を変更し、build はそのままコピペです。
 アプリを作っていくうえで主に触るのは **index.html** と **index.js** です。
 
 これ以上は、セットアップの範囲を超えるのでここでは触れません。
+
+## 任意のコマンドを実行
+
+普通に Win + r からの cmd でプロンプトを開いたのではパスが通ってないため npm などのコマンドが使えません。
+
+**\batch\cmd.bat** をダブルクリックするとプロンプトが起動しますので、こちらを使います。
+
+（実行例）npm install ...
 
 ## Licence
 
