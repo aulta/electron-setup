@@ -1,3 +1,41 @@
 /.buildpath
 /.project
 /.settings/
+
+# dependencies
+/node_modules
+/npm-debug.log
+/yarn-error.log
+/yarn-debug.log
+/.pnp
+.pnp.js
+
+# build / dist
+/dist
+/build
+/out
+
+# environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+/logs
+*.log
+
+# misc
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# electron specific
+/out/
+/.webpack/
